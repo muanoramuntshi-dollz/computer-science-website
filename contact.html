@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <link rel ="icon" type = "image/svg+xml" href="favicon.svg">
+        <title>DEPARTMENT OF COMPUTER SCIENCE</title>
+        <link rel="stylesheet" href="styling.css">
+
+    </head>
+    <body>
+        <header>
+            <img src ="images/University_of_Limpopo_logo.svg"
+            alt="University Of Limpopo Logo"
+            height ="200"width="200" radius ="100"> 
+            <h1>UNIVERSITY OF LIMPOPO</h1>
+            <hr>
+            <h2>Department Of Computer Science</h2>
+        </header>
+
+        <nav>
+            <a href ="index.html"
+            title="goes to home page">
+            home
+            </a>
+            &nbsp;&nbsp;
+
+             <a href ="about.html"
+            title="goes to about page">
+            about
+            </a>
+            &nbsp;&nbsp;
+
+            <a href="modules.html"
+            title="goes to modules page"> 
+            modules   
+            </a>
+            &nbsp;&nbsp;
+
+            <a href="contact.html"
+            title = "goes to contacts page">
+            contacts
+            </a>
+        </nav>
+
+        <br>
+
+        <main>
+
+            <h2>Student Enquiry Form</h2>
+
+            <form action="submit_form.php" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Name*:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="student number">Student Number(If you are a student):</label>
+                    <input type="text" id="student number" name="student number"><br><br>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Enquiry Details </legend>
+
+                <p>
+                    <label for ="enquiry">Enquiry:</label><br>
+                    <br>
+                    <select id="enquiry type"
+                    name="enquiry type" required>
+                        <option value="">Select an enquiry type</option>
+                        <option value="admissions">General Enquiry</option>
+                        <option value="programs">Programme Information</option>
+                        <option value="modules">Registration</option>
+                        <option value="lecturers">Technical Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+            </fieldset>
+
+            <legend>Preferred Contact Method</legend>
+            <p>
+                    <input type="radio" id="email" name="contact method" value="email" required>
+                    <label for="email">Email</label><br>
+
+                    <input type="radio" id="phone" name="contact method" value="phone">
+                    <label for="phone">Phone</label><br>
+
+                    <input type="radio" id="SMS" name="contact method" value="SMS">
+                        <label for="SMS">SMS</label>
+                </fieldset>
+
+                <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+
+            </form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>Email: <a href="mailto:info@universityoflimpopo.edu.za">info@universityoflimpopo.edu.za</a></p>
+                <p>Phone: +27 15 962 1234</p>
+            </fieldset>
+
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2024 University of Limpopo - Department of Computer Science. All rights reserved Group 7.</p>
